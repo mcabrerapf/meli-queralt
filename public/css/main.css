@@ -1,0 +1,20 @@
+.portada{
+	height: 60%;
+	width: 60%;
+	margin-left: 20%;
+}
+
+.anna-meli{
+	height: 40%;
+	width: 40%;
+	margin: 0px 20px 20px 0px;
+	border-radius: 20px;
+	float: left;
+}
+h3{
+	text-align: justify;
+}
+p{
+	text-align: justify;
+	text-indent: 10px;
+}
