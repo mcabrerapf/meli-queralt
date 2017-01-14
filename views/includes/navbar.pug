@@ -19,14 +19,17 @@ div(style='background: #050306;')
 //-       li
 //-         a(href='#') Contacto
 
-ul#myTopnav.topnav
-  li
-    a.first-nav(href='/') LoTrio
-  li
-    a(href='/anna_meli') Qui Som
-  li
-    a(href='/') Contact
-  li
-    a(href='/') About
-  li.icon
-    a(href='javascript:void(0);', onclick='myFunction()') &#9776;
+div#theNavbar
+  ul#myTopnav.topnav
+    li
+      a.first-nav(href='/') LoTrio
+    li
+      a(href='/anna_meli') Qui Som
+    li
+      a(href='/') Contact
+    li
+      a(href='/') About
+    li.icon
+      a#iconoclastic(href='javascript:void(0);', onclick='myFunction()') 
+        span 
+        | &#9776;
