@@ -1,14 +1,55 @@
 body{
 	background-color: #222222;
 	color: white;
-	background-image: url("../portada.jpeg");
+
+}
+img.mySlides{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: none;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	border-radius: 5px;
+}
+img#main-slide{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	border-radius: 5px;
+	display: block;
+
+}
+.w3-display-right{
+	margin-top: 30%;
+	right: 21.5%;
+	background-color: transparent;
+}
+.w3-display-left{
+	margin-top: 30%;
+	left: 21.5%;
+	background-color: transparent;
 }
 .portada{
-	height: 60%;
-	width: 60%;
-	margin-left: 20%;
+	vertical-align:baseline !important; 
+	width: 50%;
+	margin-left: 22%;
 }
-
+.introduction{
+	background-color: #333333;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+div.introduction h1{
+	padding-top: 20px;
+}
+div.introduction p{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+}
 .anna-meli{
 	height: 40%;
 	width: 40%;
@@ -16,19 +57,43 @@ body{
 	border-radius: 20px;
 	float: left;
 }
-.laia{
-
-}
-h3{
-	text-align: justify;
-}
-p{
-	text-align: justify;
-	text-indent: 10px;
-}
-
 .first-nav{
 	margin-left: 70px;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+button#accordion {
+	background-color: #333333;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	border-radius: 5px 5px 5px 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button#accordion.active, button#accordion:hover {
+	background-color: #333444;
+	border-radius: 5px 5px 0px 0px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div#panel {
+	padding: 18px 18px 18px 18px;
+	background-color: #333333;
+	border-radius: 0px 0px 5px 5px;
+	animation: opacityLiOut 1s;
+	display: none;
+}
+div#panel.active{
+	display: block;
+	animation: opacityLiIn 1s;
 }
 
 
@@ -69,6 +134,7 @@ ul.topnav li.icon {
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:680px) {
 	ul.topnav li {
+		transition: 2.5s;
 		display: none;
 	}
 	ul.topnav li.icon {
@@ -77,17 +143,42 @@ ul.topnav li.icon {
 	}
 	ul.topnav li a{
 		padding: 14px 16px;
-		animation: mymoveOut 0.5s;
+		animation: opacityLiOut 0.5s;
 	}
+	img.mySlides{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: none;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 5px;
+}
+img#main-slide{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 5px;
+	display: block;
+
+}
+.w3-display-right{
+	margin-top: 60%;
+	right: 8.5%;
+	background-color: transparent;
+}
+.w3-display-left{
+	margin-top: 60%;
+	left: 8.5%;
+	background-color: transparent;
+}
 }
 
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
-	#iconoclastic{
-		opacity: 1;
-		height: 52px;
-	}
 	ul.topnav.responsive{
 		position: relative;
 	}
@@ -95,7 +186,6 @@ ul.topnav li.icon {
 		position: absolute;
 		right: 0;
 		top: 0;
-	
 	}
 	ul.topnav.responsive li {
 		float: none;
@@ -104,27 +194,37 @@ ul.topnav li.icon {
 	ul.topnav.responsive li a {
 		display: block;
 		text-align: center;
-		animation: mymoveIn 0.5s;
+	}
+	ul.topnav.responsive li a{
+		animation: opacityLiIn 0.5s;
 	}
 	#megaIcon{
-		opacity: 1;
 		height: 52px;
 	}
 	.first-nav{
 		margin-left: 0;
-
 	}
 	.portada{
 		width: 100%;
 		margin: 0;
 	}
-}
-@keyframes mymoveIn {
-    0%   {opacity: 0; height: 0px;}
-    100% {opacity: 1; height: 52px;}
-}
-@keyframes mymoveOut{
-	0%   {opacity: 1; height: 52px; display: block;}
-    100% {opacity: 0; height: 52px; display: none;}
+	#iconThing{
+		animation: none !important;
+		cursor: pointer;
+	}
 }
 
+@keyframes opacityLiIn {
+	0%   {opacity: 0; height: 0%;}
+	25%  {opacity: 0.25; height: 25%;}
+	50%  {opacity: 0.5; height: 50%;}
+	75%  {opacity: 0.75; height: 75%;}
+	100% {opacity: 1; height: 100%;}
+}
+@keyframes opacityLiOut {
+	0%   {opacity: 1; height: 100%;}
+	25%  {opacity: 0.75; height: 75%;}
+	50%  {opacity: 0.5; height: 50%;}
+	75%  {opacity: 0.25; height: 25%;}
+	100% {opacity: 0; height: 0%; display: none;}
+}

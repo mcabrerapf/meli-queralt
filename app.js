@@ -7,14 +7,14 @@ app.set('view engine', 'pug')
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!' })
 })
-app.get('/anna_meli', function (req, res) {
-  res.render('anna_meli')
-})
-app.get('/laia_queralt', function (req, res) {
-  res.render('laia_queralt')
+app.get('/qui-som', function (req, res) {
+  res.render('qui-som')
 })
 app.get('/galeria', function (req, res) {
   res.render('galeria')
+})
+app.get('/contacto', function (req, res) {
+  res.render('contacto')
 })
 
 

@@ -1,35 +1,14 @@
 div(style='background: #050306;')
    img.portada(src='portada2.jpeg') 
-//- nav.navbar.navbar-inverse
-//-   .container-fluid
-//-     .navbar-header
-//-       a.navbar-brand(href='/') Io Trio
-//-     ul.nav.navbar-nav
-//-       li.dropdown
-//-         a.dropdown-toggle(data-toggle='dropdown', href='#')
-//-           | Trayectoria 
-//-           span.caret
-//-         ul.dropdown-menu
-//-           li
-//-             a(href='/anna_meli') Anna Meli
-//-           li
-//-             a(href='/laia_queralt') Lai Queralt
-//-       li
-//-         a(href='/galeria') Galeria
-//-       li
-//-         a(href='#') Contacto
-
 div#theNavbar
   ul#myTopnav.topnav
     li
       a.first-nav(href='/') LoTrio
     li
-      a(href='/anna_meli') Qui Som
+      a(href='/qui-som') Qui Som
     li
-      a(href='/') Contact
+      a(href='/galeria') Galeria
     li
-      a(href='/') About
+      a(href='/contacto') Contacto
     li.icon
-      a#iconoclastic(href='javascript:void(0);', onclick='myFunction()') 
-        span 
-        | &#9776;
+      a#iconThing(onclick='navBarResponsive()') &#9776;
