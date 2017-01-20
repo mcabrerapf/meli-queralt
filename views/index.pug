@@ -2,13 +2,15 @@ extends layout
 block content
     div.introduction
         h1(style='text-align: center;') LoTrio
-        p(style='margin-top:20px;') Anna Meli (piano) i Laia Queralt (clarinet) les dues graduades al Conservatori Superior de Música del Liceu us presenten "Música en Femení", un repertori de música de cambra format exclusivament per obres creades per dones. Tothom és conscient de l'existència de les dones compositores però les seves obres no solen ser programades dins dels repertoris habituals de música clàssica. A aquest recital podreu conèixer obres que van des del primer romanticisme fins a la música contemporània desde la perspectiva de les dones creadores. Escoltareu obres d'una de les compositores més rellevants de la història, Clara Schumann, com d'una compositora especialitzada en la música jueva, Sarah Feigin, com també de compositores contemporànies com Kaija Saariaho i Jeanine Rueff. 
-    div(style='margin-bottom:50px; margin-top:25px;')
-        button#accordion(onclick='accordionDisplay()') Proper Concert: MUSICA EN FEMENNI
+        p(style='margin-top:20px; text-align: justify;') Anna Meli (piano) i Laia Queralt (clarinet) les dues graduades al Conservatori Superior de Música del Liceu us presenten "Música en Femení", un repertori de música de cambra format exclusivament per obres creades per dones. Tothom és conscient de l'existència de les dones compositores però les seves obres no solen ser programades dins dels repertoris habituals de música clàssica. A aquest recital podreu conèixer obres que van des del primer romanticisme fins a la música contemporània desde la perspectiva de les dones creadores. Escoltareu obres d'una de les compositores més rellevants de la història, Clara Schumann, com d'una compositora especialitzada en la música jueva, Sarah Feigin, com també de compositores contemporànies com Kaija Saariaho i Jeanine Rueff. 
+    div(style='margin-bottom:20px; margin-top:25px;')
+        button#accordion(onclick='accordionDisplay()') MÚSICA EN FEMENÍ
         #panel
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            p(style='text-align: justify;') LoTrio us presenta "Música en Femení", un repertori de música de cambra format exclusivament per obres creades per dones. Tothom és conscient de l'existència de les dones compositores però les seves obres no solen ser programades dins dels repertoris habituals de música clàssica. En aquest recital podreu conèixer obres que van des del primer romanticisme fins a la música contemporània desde la perspectiva de les dones creadores. Escoltareu obres d'una de les compositores més rellevants de la història, Clara Schumann, com d'una compositora especialitzada en la música jueva, Sarah Feigin, com també de compositores contemporànies com Kaija Saariaho i Jeanine Rueff. 
+            button#accordion3(onclick='accordionDisplay3()') Repertori
+            #panel3
+                p Aqui se ponda el repertori
+    div(style='margin-bottom:50px;')
+        button#accordion2(onclick='accordionDisplay2()') MÚSICA EN FEMENÍ
+        #panel2
+            p(style='text-align: justify;') LoTrio us presenta "Música en Femení", un repertori de música de cambra format exclusivament per obres creades per dones. Tothom és conscient de l'existència de les dones compositores però les seves obres no solen ser programades dins dels repertoris habituals de música clàssica. En aquest recital podreu conèixer obres que van des del primer romanticisme fins a la música contemporània desde la perspectiva de les dones creadores. Escoltareu obres d'una de les compositores més rellevants de la història, Clara Schumann, com d'una compositora especialitzada en la música jueva, Sarah Feigin, com també de compositores contemporànies com Kaija Saariaho i Jeanine Rueff.

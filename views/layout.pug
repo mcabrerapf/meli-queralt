@@ -12,8 +12,9 @@ html(lang='en')
   body
     include ./includes/navbar.pug
     #body-items  
-      .container
+      .container(style='margin-bottom: 100px;')
         block content
+    include ./includes/footbar.pug
 
     //script(type='text/javascript',src='https://code.jquery.com/jquery-2.0.3.min.js').
     //script(type='text/javascript',src='/js/main.js').

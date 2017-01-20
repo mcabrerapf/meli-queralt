@@ -3,6 +3,9 @@ body{
 	color: white;
 
 }
+p{
+	text-justify: inter-word;
+}
 .w3-display-left, .w3-display-right, #main-slide, .mySlides{
 	display: none;	
 }
@@ -22,7 +25,6 @@ body{
 .test-img:hover, .first-test-img:hover{
 	transform: scale(2);
 }
-
 .portada{
 	vertical-align:baseline !important; 
 	width: 50%;
@@ -47,9 +49,8 @@ div.introduction p{
 
 
 /* Style the buttons that are used to open and close the accordion panel */
-button#accordion {
+button#accordion, button#accordion2, button#accordion3 {
 	background-color: #333333;
-	text-align: center;
 	color: white;
 	cursor: pointer;
 	padding: 18px;
@@ -62,20 +63,21 @@ button#accordion {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button#accordion.active, button#accordion:hover {
+button#accordion.active, button#accordion:hover, button#accordion2.active, button#accordion2:hover, button#accordion3.active, button#accordion3:hover {
 	background-color: #333444;
 	border-radius: 5px 5px 0px 0px;
 }
 
 /* Style the accordion panel. Note: hidden by default */
-div#panel {
+div#panel, div#panel2, div#panel3 {
+	width: 100%;
 	padding: 18px 18px 18px 18px;
 	background-color: #333333;
 	border-radius: 0px 0px 5px 5px;
 	animation: opacityLiOut 1s;
 	display: none;
 }
-div#panel.active{
+div#panel.active, div#panel2.active, div#panel3.active{
 	display: block;
 	animation: opacityLiIn 1s;
 }
@@ -162,6 +164,18 @@ ul.topnav li.icon {
 	}
 	.first-test-img, .test-img{
 		display: none;
+	}
+	/* Style the buttons that are used to open and close the accordion panel */
+	button#accordion, button#accordion2 {
+		background-color: #333333;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		text-align: left;
+		border: none;
+		outline: none;
+		transition: 0.4s;
+		border-radius: 5px 5px 5px 5px;
 	}
 }
 

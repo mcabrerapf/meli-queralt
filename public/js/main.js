@@ -25,6 +25,39 @@ function accordionDisplay(){
     }
 
 }
+function accordionDisplay2(){
+    var accordion = document.getElementById("accordion2");
+    if (accordion.className === ""){
+        accordion.className += " active"
+    }else{
+        accordion.className = ""
+    }
+    var panel = document.getElementById("panel2")
+    if(panel.className === ""){
+        panel.className += " active"
+    }else{
+        panel.className = ""
+    }
+
+}
+function accordionDisplay3(){
+    var accordion = document.getElementById("accordion3");
+    if (accordion.className === ""){
+        accordion.className += " active"
+    }else{
+        accordion.className = ""
+    }
+    var panel = document.getElementById("panel3")
+    if(panel.className === ""){
+        panel.className += " active"
+    }else{
+        panel.className = ""
+    }
+
+}
+
+
+
 function plusDivs(n) {
     showDivs(slideIndex += n);
 }
