@@ -3,35 +3,26 @@ body{
 	color: white;
 
 }
-img.mySlides{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	display: none;
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
-	border-radius: 5px;
+.w3-display-left, .w3-display-right, #main-slide, .mySlides{
+	display: none;	
 }
-img#main-slide{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
-	border-radius: 5px;
-	display: block;
+.first-test-img{
+	width: 15%;
+	margin: 50px;
+	transition: all 1s ease;
+	border-radius: 10px;
 
 }
-.w3-display-right{
-	margin-top: 30%;
-	right: 21.5%;
-	background-color: transparent;
+.test-img{
+	width: 15%;
+	margin: 50px;
+	transition: all 1s ease;
+	border-radius: 10px;
 }
-.w3-display-left{
-	margin-top: 30%;
-	left: 21.5%;
-	background-color: transparent;
+.test-img:hover, .first-test-img:hover{
+	transform: scale(2);
 }
+
 .portada{
 	vertical-align:baseline !important; 
 	width: 50%;
@@ -49,13 +40,6 @@ div.introduction p{
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 20px;
-}
-.anna-meli{
-	height: 40%;
-	width: 40%;
-	margin: 0px 20px 20px 0px;
-	border-radius: 20px;
-	float: left;
 }
 .first-nav{
 	margin-left: 70px;
@@ -134,6 +118,7 @@ ul.topnav li.icon {
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:680px) {
 	ul.topnav li {
+
 		transition: 2.5s;
 		display: none;
 	}
@@ -146,34 +131,38 @@ ul.topnav li.icon {
 		animation: opacityLiOut 0.5s;
 	}
 	img.mySlides{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	display: none;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	border-radius: 5px;
-}
-img#main-slide{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	border-radius: 5px;
-	display: block;
-
-}
-.w3-display-right{
-	margin-top: 60%;
-	right: 8.5%;
-	background-color: transparent;
-}
-.w3-display-left{
-	margin-top: 60%;
-	left: 8.5%;
-	background-color: transparent;
-}
+		margin-top: 50px;
+		margin-bottom: 50px;
+		display: none;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		border-radius: 5px;
+	}
+	img#main-slide{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		border-radius: 5px;
+		display: block;
+	}
+	.w3-display-right{
+		margin-top: 60%;
+		right: 8.5%;
+		background-color: transparent;
+		display: inline-block;
+	}
+	.w3-display-left{
+		margin-top: 60%;
+		left: 8.5%;
+		background-color: transparent;
+		display: inline-block;
+	}
+	.first-test-img, .test-img{
+		display: none;
+	}
 }
 
 
