@@ -1,16 +1,62 @@
 extends layout
 block content
-    div.introduction
-        h1(style='text-align: center;') LoTrio
-        p(style='margin-top:20px; text-align: justify;') Anna Meli (piano) i Laia Queralt (clarinet) les dues graduades al Conservatori Superior de Música del Liceu us presenten "Música en Femení", un repertori de música de cambra format exclusivament per obres creades per dones. Tothom és conscient de l'existència de les dones compositores però les seves obres no solen ser programades dins dels repertoris habituals de música clàssica. A aquest recital podreu conèixer obres que van des del primer romanticisme fins a la música contemporània desde la perspectiva de les dones creadores. Escoltareu obres d'una de les compositores més rellevants de la història, Clara Schumann, com d'una compositora especialitzada en la música jueva, Sarah Feigin, com també de compositores contemporànies com Kaija Saariaho i Jeanine Rueff. 
-    div(style='margin-bottom:20px; margin-top:25px;')
+    div(style='margin-bottom:20px; margin-top:20px;')
+        button#accordion3(onclick='accordionDisplay3()' style='text-align: center; font-size: 30px;') LoTrio
+        #panel3
+            p(style='text-align: justify;') Anna Meli (piano) i Laia Queralt (clarinet) es van conèixer cursant els estudis superiors de música al Conservatori Superior del Liceu l'any 2012 i van decidir formar un conjunt de música de cambra. 
+            p(style='text-align: justify;') El conjunt original estava format per clarinet, viola i piano, amb la col·laboració de Rocío Duran. En aquesta formació van tocar obres de Max Bruch, Wolfgang Mozart, Jean Françaix entre d'altres. Quan la Rocío va decidir marxar a estudiar a l'estranger van treballar amb la soprano Laia Nomen, també estudiant del Liceu, obres de Schubert, Mozart i Spohr per a trio format per veu, clarinet i piano. En aquestes formacions han realitzat concerts tant a l'àmbit acadèmic com fora del mateix. 
+            p(style='text-align: justify;') Finalment, després de finalitzar totes dues el Grau Superior, van decidir mantenir la formació com a duet i treballar un repertori de clarinet i piano. Van començar per les obres habituals per a aquesta formació però molt aviat va sorgir la idea de fer un repertori una mica diferent. Van realitzar una recerca per aconseguir crear un repertori escrit exclusivament per dones compositores. D'aquesta manera poden fusionar dos idees: presentar un repertori poc interpretat i fer arribar al públic obres composades per dones, que normalment no es solen programar. Les obres d'aquest recital estan seleccionades amb la intencionalitat de representar pràcticament totes les èpoques de la música clàssica, des de finals del classicisme i primer romanticisme fins a la música contemporània. Interpreten obres de compositores  més conegudes com Clara Schumann, Fanny Mendelssonh o Kaija Saariaho i també d'altres no tant reconegudes com Caroline Scheleicker-Krämer, Augusta Holmes, Jeanine Rueff o Sarah Feigin.
+
+    div(style='margin-bottom:20px; margin-top:10px;')
         button#accordion(onclick='accordionDisplay()') MÚSICA EN FEMENÍ
         #panel
-            p(style='text-align: justify;') LoTrio us presenta "Música en Femení", un repertori de música de cambra format exclusivament per obres creades per dones. Tothom és conscient de l'existència de les dones compositores però les seves obres no solen ser programades dins dels repertoris habituals de música clàssica. En aquest recital podreu conèixer obres que van des del primer romanticisme fins a la música contemporània desde la perspectiva de les dones creadores. Escoltareu obres d'una de les compositores més rellevants de la història, Clara Schumann, com d'una compositora especialitzada en la música jueva, Sarah Feigin, com també de compositores contemporànies com Kaija Saariaho i Jeanine Rueff. 
-            button#accordion3(onclick='accordionDisplay3()') Repertori
-            #panel3
-                p Aqui se ponda el repertori
+            p(style='text-align: justify;') LoTrio us presenta "Música en Femení", un repertori de música de cambra format exclusivament per obres creades per dones. Tothom és conscient de l'existència de les dones compositores però les seves obres no solen ser programades dins dels repertoris habituals de música clàssica. En aquest recital podreu conèixer obres que van des del primer romanticisme fins a la música contemporània des de la perspectiva de les dones creadores. Escoltareu obres d'unes de les compositores més rellevants de la història, Clara Schumann i Fanny Mendelsshon, com d'una compositora especialitzada en la música jueva, Sarah Feigin, com també de compositores contemporànies com Kaija Saariaho i Jeannine Rueff. 
+            button#accordion4(onclick='accordionDisplay4()') Repertori
+            #panel4
+                ul
+                    li Clara Schumann:
+                        ul
+                            li Drei Romanzen. op. 22 ( I.Andante molto, II.Allegretto, III.Allegro)
+                    li Caroline Schleicher-Krämer
+                        ul
+                            li Sonatine ( I.Larghetto, II. Walse, III.Polacca)
+                    li Jeanine Rueff
+                        ul
+                            li Concertino ( Allegro. Adagio. Allegro)
+                    li Augusta Holmes
+                        ul
+                            li Fantaisie pour clarinette
+                    li Sarah Feigin
+                        ul
+                            li Fantasia for Clarinet & Piano 
+                    li Kaija Saariaho 
+                        ul
+                            li Duft per a clarinet sol (I.Blütenstaub, II.Blühend, III.Flüchtig)
+                    li Fanny Mendelssohn
+                        ul
+                            li Six Melodies pour le piano, op. 4 i op. 5 ( II.Allegretto, VI.Andante soave)
     div(style='margin-bottom:50px;')
-        button#accordion2(onclick='accordionDisplay2()') MÚSICA EN FEMENÍ
+        button#accordion2(onclick='accordionDisplay2()') Proper Concert
         #panel2
-            p(style='text-align: justify;') LoTrio us presenta "Música en Femení", un repertori de música de cambra format exclusivament per obres creades per dones. Tothom és conscient de l'existència de les dones compositores però les seves obres no solen ser programades dins dels repertoris habituals de música clàssica. En aquest recital podreu conèixer obres que van des del primer romanticisme fins a la música contemporània desde la perspectiva de les dones creadores. Escoltareu obres d'una de les compositores més rellevants de la història, Clara Schumann, com d'una compositora especialitzada en la música jueva, Sarah Feigin, com també de compositores contemporànies com Kaija Saariaho i Jeanine Rueff.
+            p(style='text-align: justify;') Dv. 10 de març a les 20.00 -- Teatre “La Sala”  Sant Salvador de Guardiola
+            
+
+            
+            
+
+            
+             
+
+            
+            
+
+            
+            
+
+            
+            
+
+
+
+
+            

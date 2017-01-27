@@ -49,7 +49,7 @@ div.introduction p{
 
 
 /* Style the buttons that are used to open and close the accordion panel */
-button#accordion, button#accordion2, button#accordion3 {
+button#accordion, button#accordion2, button#accordion3, button#accordion4 {
 	background-color: #333333;
 	color: white;
 	cursor: pointer;
@@ -63,13 +63,13 @@ button#accordion, button#accordion2, button#accordion3 {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button#accordion.active, button#accordion:hover, button#accordion2.active, button#accordion2:hover, button#accordion3.active, button#accordion3:hover {
+button#accordion.active, button#accordion:hover, button#accordion2.active, button#accordion2:hover, button#accordion3.active, button#accordion3:hover, button#accordion4.active, button#accordion4:hover {
 	background-color: #333444;
 	border-radius: 5px 5px 0px 0px;
 }
 
 /* Style the accordion panel. Note: hidden by default */
-div#panel, div#panel2, div#panel3 {
+div#panel, div#panel2, div#panel3, div#panel4 {
 	width: 100%;
 	padding: 18px 18px 18px 18px;
 	background-color: #333333;
@@ -77,7 +77,7 @@ div#panel, div#panel2, div#panel3 {
 	animation: opacityLiOut 1s;
 	display: none;
 }
-div#panel.active, div#panel2.active, div#panel3.active{
+div#panel.active, div#panel2.active, div#panel3.active, div#panel4.active{
 	display: block;
 	animation: opacityLiIn 1s;
 }
@@ -118,6 +118,13 @@ ul.topnav li.icon {
 }
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (min-width: 690px) {
+	.w3-display-left, .w3-display-right, #main-slide, .mySlides{
+		display: none;	
+	}
+
+}
+
 @media screen and (max-width:680px) {
 	ul.topnav li {
 
@@ -166,7 +173,7 @@ ul.topnav li.icon {
 		display: none;
 	}
 	/* Style the buttons that are used to open and close the accordion panel */
-	button#accordion, button#accordion2 {
+	button#accordion, button#accordion2, button#accordion3, button#accordion4 {
 		background-color: #333333;
 		color: white;
 		cursor: pointer;

@@ -55,6 +55,21 @@ function accordionDisplay3(){
     }
 
 }
+function accordionDisplay4(){
+    var accordion = document.getElementById("accordion4");
+    if (accordion.className === ""){
+        accordion.className += " active"
+    }else{
+        accordion.className = ""
+    }
+    var panel = document.getElementById("panel4")
+    if(panel.className === ""){
+        panel.className += " active"
+    }else{
+        panel.className = ""
+    }
+
+}
 
 
 
